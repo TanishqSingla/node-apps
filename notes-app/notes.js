@@ -76,8 +76,8 @@ const saveNotes = notes => {
 
 //? Exporting module
 module.exports = {
-  addNote: addNote,
-  rmNote: rmNote,
-  listNote: listNote,
-  readNote: readNote
+  addNote,
+  rmNote,
+  listNote,
+  readNote
 };
