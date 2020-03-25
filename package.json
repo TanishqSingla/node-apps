@@ -18,6 +18,7 @@
   "homepage": "https://github.com/TanishqSingla/node-apps#readme",
   "dependencies": {
     "chalk": "^3.0.0",
+    "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "request": "^2.88.2",
     "yargs": "^15.3.1"
