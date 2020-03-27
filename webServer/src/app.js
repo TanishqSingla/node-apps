@@ -29,6 +29,7 @@ app.get("/about", (req, res) => {
 
 app.get("/help", (req, res) => {
   res.render("help", {
+    title: "Help",
     helpText: "This is some helpful text"
   });
 });
@@ -37,6 +38,22 @@ app.get("/weather", (req, res) => {
   res.send({
     forecast: "It is clear",
     location: "India"
+  });
+});
+
+app.get("/help/*", (req, res) => {
+  res.render("404", {
+    title: "404",
+    name: "Tanishq Singla",
+    errorMessage: "Help article not found"
+  });
+});
+
+app.get("*", (req, res) => {
+  res.render("404", {
+    title: "404",
+    name: "Tanishq Singla",
+    errorMessage: "Page not found"
   });
 });
 
